@@ -9,32 +9,28 @@
 
 <body>
     <script>
-        function cifraComCifraDeCesar(deslocamento, mensagem) {
 
-            var caracteres = [];
-            var mensagemEncriptada = '';
-                for(var i = 0; i < deslocamento.length; i++) {
-                    caracteres.push(deslocamento[i].charCoeAt(0) + mensagem);
-                    mensagemEncriptada = String.fromCharCode(caracteres[i]) + mensagemEncriptada;
-                }
+        function cifrandoCesar(frase, deslocamento) {
+            var arrayFrase = frase.split("")
 
-                return mensagemEncriptada;
+            var arrChar = []
 
+            for (var i = 0; i < arrayFrase.length; i++) {
+                arrChar.push(arrayFrase[i].charCodeAt() + deslocamento)
+            }
+
+            var arrCode = []
+
+            for (var i = 0; i < arrChar.length; i++) {
+                arrCode.push(String.fromCharCode(arrChar[i]))
+            }
+
+
+            return arrCode.join("")
         }
 
-        function decifraCifraDeCesar(deslocamento, mensagemCifrada) {
+        document.write(cifrandoCesar('Ola Mundo', 4))
 
-            var caracteres = [];
-            var mensagemDecifrada = '';
-                for(var i = 0; i < deslocamento.length; i++) {
-                    caracteres.push(deslocamento[i].charCodeAt(0) - mensagemCifrada);
-                    mensagemDecifrada = String.fromCharCode(caracteres[i]) + mensagemDecifrada;
-                }
-
-                return mensagemDecifrada;
-
-
-        }
     </script>
 </body>
 
