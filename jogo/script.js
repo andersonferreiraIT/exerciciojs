@@ -3,8 +3,8 @@ function iniciar() {
     var nome = document.getElementById("name").value
     var body = document.querySelector("body")
 
-    body.innerHTML += `<h3>VOCÊ ${nome}, ESTÁ NA LUTA PARA SE TORNAR UM CAMPEÃO DA TERRA</h3>`
-    body.innerHTML += `<h4>MAS VOCÊ ESTÁ EM UM MUNDO ONDE O CORONA VÍRUS É REALIDADE PARA OS FRACASSADOS!<br> VOCÊ VAI SAIR PARA TRILHAR SEU CAMINHO DE CAMPEÃO?</h4><br>`
+    body.innerHTML += `<h3 class="maior">VOCÊ ${nome}, ESTÁ NA LUTA PARA SE TORNAR UM CAMPEÃO DA TERRA</h3>`
+    body.innerHTML += `<h4>MAS ESTÁ EM UM MUNDO ONDE O CORONA VÍRUS É REALIDADE PARA OS FRACASSADOS!<br> VOCÊ VAI SAIR PARA TRILHAR SEU CAMINHO DE CAMPEÃO?</h4><br>`
     body.innerHTML += `<button onclick="primeiraSim()">SIM</button>
     <button onclick="primeiraNao()">não</button>`
 
@@ -17,7 +17,7 @@ function primeiraSim() {
     body.innerHTML += `<p>BOA, ISSO MOSTRA QUE VOCÊ ESTÁ NO CAMINHO CERTO DE CAMPEÃO DA TERRA!</p>`
     body.innerHTML += `<p>ESTÁ PRONTO PARA COMEÇAR A EXALAR ENERGIA?</p><br>`
     body.innerHTML += `<button onclick="segundaSim()">SIM</button>
-    <button onclick="segundaNao()">Não</button>`
+    <button onclick="segundaNao()">não</button>`
 }
 
 function primeiraNao() {
@@ -48,7 +48,7 @@ function terceiraSim() {
     body.innerHTML += `<p>VOCÊ ESTÁ NO CAMINHO CERTO PARA SE TORNAR UM CAMPEÃO DA TERRA!</p>`
     body.innerHTML += `<p>VOCÊ DA 5 SOCOS POR SEGUNDO?</p><br>`
     body.innerHTML += `<button onclick="quartaSim()">SIM</button>
-    <button onclick="quartaNao()">Não</button>`
+    <button onclick="quartaNao()">não</button>`
 }
 
 function terceiraNao() {
@@ -63,7 +63,7 @@ function quartaSim() {
     body.innerHTML += `<p>VEM COMIGO RAPAZIADA, AQUI É XANDÃO!!</p>`
     body.innerHTML += `<p>VAMOS PARA A RETA FINAL?</p><br>`
     body.innerHTML += `<button onclick="quintaSim()">SIM</button>
-    <button onclick="quintaNao()">Não</button>`
+    <button onclick="quintaNao()">não</button>`
 }
 
 function quartaNao() {
@@ -91,8 +91,8 @@ function quintaNao() {
 function sextaSim() {
     var body = document.querySelector("body")
     body.innerHTML += `<br> <p>AGORA VOCÊ É UM CAMPEÃO DA TERRA PRONTO PARA LUTAR CONTRAR OS DEMÔNIOS!</p>`
-    body.innerHTML += `<p>TOMA!</p><br>`
-    body.innerHTML += `<br> <img src="img/xandaogod.jpg" alt="XANDÃOFOREVER"><br>`
+    body.innerHTML += `<br><p>TOMA!</p>`
+    body.innerHTML += `<img src="img/xandaogod.jpg" alt="XANDÃOFOREVER"><br>`
     body.innerHTML += `<h1>DOUBLE BICEPS!!</h1>`
 }
 
