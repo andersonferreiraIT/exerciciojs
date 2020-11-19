@@ -11,7 +11,7 @@ function linhaDeSeparacao() {
 function oqueVaiParecerEscrito(trabalho) {
 
     document.write(trabalho);
-    quebraDeLinha();                
+    quebraDeLinha();
 }
 
 function quebraDeLinhaDepois() {
@@ -24,20 +24,17 @@ function quebraDeLinhaDepois() {
 
 // Permissão para dirigir
 
-function permissaoPraDirigir(idadeDoUsuario, idadePermitidaPraDirigir)
-{
-    if (idadeDoUsuario >= idadePermitidaPraDirigir)
-    {
+function permissaoPraDirigir(idadeDoUsuario, idadePermitidaPraDirigir) {
+    if (idadeDoUsuario >= idadePermitidaPraDirigir) {
         return "Você pode dirigir";
     } else {
         return "Você não pode dirigir";
-    }   
+    }
 }
 
 oqueVaiParecerEscrito("Será que você pode dirigir?");
 
-function resultadoDaAutoEscola(idadeUsuario, idadePermitida)
-{
+function resultadoDaAutoEscola(idadeUsuario, idadePermitida) {
     var possoDirigirOuNao = permissaoPraDirigir(idadeUsuario, idadePermitida);
     oqueVaiParecerEscrito(possoDirigirOuNao);
 
@@ -60,21 +57,18 @@ linhaDeSeparacao();
 //Permissão para beber
 
 
-function permissaoPraBeber(idadeDoUsuario, idadePermitidaPraBeber)
-{
-    if (idadeDoUsuario >= idadePermitidaPraBeber)
-    {
+function permissaoPraBeber(idadeDoUsuario, idadePermitidaPraBeber) {
+    if (idadeDoUsuario >= idadePermitidaPraBeber) {
         return "Você pode Beber";
     } else {
         return "Você não pode beber";
-    }   
+    }
 }
 
 oqueVaiParecerEscrito("Será que você pode beber?");
 
 
-function resultadoDoBar(idadeUsuario, idadePermitida)
-{
+function resultadoDoBar(idadeUsuario, idadePermitida) {
     var possoBeberOuNao = permissaoPraBeber(idadeUsuario, idadePermitida);
     oqueVaiParecerEscrito(possoBeberOuNao);
 

@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+    }
+
+    .cabecalho, .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+}
